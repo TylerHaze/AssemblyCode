@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Oa",
+					"strict" : false
+				},
+				{
+					"name" : "Ob",
+					"strict" : false
+				},
+				{
+					"name" : "Oc",
+					"strict" : false
+				},
+				{
+					"name" : "Od",
+					"strict" : false
+				},
+				{
+					"name" : "Oe",
+					"strict" : false
+				},
+				{
+					"name" : "Of",
+					"strict" : false
+				},
+				{
+					"name" : "Og",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+.equ switches, 0x00002030
+.equ a, 0x00002000
+.equ x, 0x00002010
+.global _start
+_start: movia r2, switches
+		movia r3, x
+		movia r4, ARRAY
+		movia r5, a
+		ldbio r7, 0(r2) #r7 is W
+		stbio r7, 0(r5) #stores W into r5 for display
+		add r8, r7, r7
+		add r8, r7, r8 #this is 3w
+		add r6, r6, r0 
+	
+	
+LOOP:
+	add  r10, r10, r0
+	ldbio r10, 0(r2)  #get value from user
+	stbio r10, 0(r4) #stores value from user into ARRAY
+	stbio r6, 0(r5) #store value from user into a
+	addi r4, r4, 1 #increment the array pointer
+	addi r7, r7, 1 #increment the index by 1
+	addi r6, r6, 1
+	beq r8, r7, END
+	
+	
+br LOOP
+
+END: br END
+
+ARRAY: .skip 128
